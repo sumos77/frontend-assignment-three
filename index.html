@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Make a todo-list for all your things to do.">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>todos</h1>
+    </header>
+    <section>
+        <form>
+            <button type="button" id="toggle-all">🔽</button>
+            <input type="text" id="note" placeholder="What needs to be done?">
+        </form>
+        <main>
+            <ul id="notes"></ul>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div id="item-counter">
+                    <div class="pendingTasks"></div>
+                </div>
+                <div id="view-navbar">
+                    <ul class="filters">
+                        <li>
+                            <a href="#/" id="view-all" class="selected">All</a>
+                        </li>
+                        <li>
+                            <a href="#/active" id="view-active">Active</a>
+                        </li>
+                        <li>
+                            <a href="#/completed" id="view-completed">Completed</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="clear-completed">
+                    <button id="clear-all-completed">Clear completed</button>    
+                </div>
+            </div>
+        </footer>
+    </section>
+</body>
+</html>
